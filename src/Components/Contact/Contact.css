@@ -1,0 +1,42 @@
+.social-icon {
+  display: flex;
+  font-size: 25px;
+  gap: 30px;
+  text-align: ;
+}
+
+.social-icon .fb {
+  color: #1877f2;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+}
+
+.social-icon .wa {
+  color: white;
+  background-color: #25d366;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.social-icon .lni {
+  color: #0072b1;
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+  .info_link {
+    margin-bottom: 48px;
+    padding: 0px 15px;
+  }
+  .info_part {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

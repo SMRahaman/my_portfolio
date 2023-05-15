@@ -1,16 +1,3 @@
-.title h1 {
-  font-size: 48px;
-  font-weight: bold;
-}
-
-img.about_photo {
-  width: 400px;
-  height: 400px;
-  margin: auto;
-  display: block;
-  border: 3px solid orange;
-}
-
 .link-active {
   color: blue;
   list-style: none;
@@ -65,13 +52,5 @@ img.about_photo {
     margin-top: 48px;
     font-size: 12px;
     cursor: pointer;
-  }
-
-  img.about_photo {
-    width: 350px;
-    height: 350px;
-    margin: auto;
-    display: block;
-    border: 3px solid orange;
   }
 }

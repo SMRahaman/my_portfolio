@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./About.css";
-import my_photo from "../../assests/my_photo.jpeg";
-import { Col, Container, Row } from "react-bootstrap";
+import my_photo from "../../assests/about_photo.jpg";
+import { Button, Col, Container, Row } from "react-bootstrap";
 
 const About = () => {
   const [update, setUpdate] = useState(1);
@@ -9,19 +9,15 @@ const About = () => {
     setUpdate(id);
   };
   return (
-    <div>
-      <div className="title">
+    <div className="my-5">
+      <div className="title" id="about">
         <h1 className="text-center text-uppercase text-white">About</h1>
         <span className="text-center d-block text-white">My Intruduction</span>
       </div>
       <Container className="my-5">
         <Row>
           <Col lg={6} sm={12}>
-            <img
-              src={my_photo}
-              alt=""
-              className="img-fluid about_photo rounded-circle"
-            />
+            <img src={my_photo} alt="" className="img-fluid " />
           </Col>
           <Col lg={6} sm={12}>
             <div className="text-white d-flex justify-content-around tab_link">
@@ -52,53 +48,57 @@ const About = () => {
             </div>
             <div className="info-content mt-5">
               <div className={update === 1 ? "show-content " : "content"}>
-                <h2 className="mb-3 tab-title">My Introduction</h2>
-                <p className="fs-5">
+                <h2 className="mb-3 tab-title text-center">My Introduction</h2>
+                <p className="fs-5 ">
                   My name is Syed Marufur Rahman. I live in Bangladesh. My home
-                  district Barsial. I have passed the BSC(Becholar of Computer
-                  Science)in 2021. My hobbies Cricket, Football, Coding. I am
-                  now doing IT support engneering job but I want to be a MERN
-                  stack developer.
+                  district Barsial. I have completed the graduation on CSE in
+                  2021. My hobbies Cricket, Football, Coding. I am now doing IT
+                  support engneering job but I want to be a MERN stack
+                  developer.
                 </p>
+                <div className="mt-4 text-center text-lg-start">
+                  <Button variant="primary">Download CV</Button>
+                </div>
               </div>
               <div className={update === 2 ? "show-content " : "content"}>
-                <h2 className="mb-3 tab-title">Education</h2>
-                <div>
-                  <h5>1. Secondary School Certificate</h5>
-                  <p>Passing Year: 2014</p>
-                  <p>GPA: 4.69 out of 5</p>
-                </div>
-                <div>
-                  <h5>2. Diploma in Computer Technology</h5>
-                  <p>Passing Year: 2018</p>
-                  <p>CGPA: 3.33 out of 4</p>
-                </div>
-                <div>
-                  <h5>3. Bachelor Degree in CSE</h5>
-                  <p>Passing Year: 2021</p>
-                  <p>CGPA: 3.09 out of 4</p>
+                <h2 className="mb-3 tab-title text-center">Education</h2>
+                <div className="text-center">
+                  <div className="mb-3">
+                    <h5>Becholar Degree in Computer Science Engineering</h5>
+                    <p>Passing Year:2021</p>
+                    <p>GPA: 3.09 out of 4</p>
+                  </div>
+                  <div>
+                    <h5>Diploma in Computer Technology</h5>
+                    <p>Passing Year: 2018</p>
+                    <p>CGPA: 3.33 out of 4</p>
+                  </div>
                 </div>
               </div>
               <div className={update === 3 ? "show-content " : "content"}>
-                <h2 className="mb-3 tab-title">Work Experience</h2>
-                <div>
-                  <h5>1. Junior IT Officer</h5>
-                  <p>Job Period: 2018-2019</p>
-                </div>
-                <div>
-                  <h5>2. Maintenance Assitant (IT)</h5>
-                  <p>Job Period: 2019-Present</p>
+                <h2 className="mb-3 tab-title text-center">Work Experience</h2>
+                <div className="text-center">
+                  <div className="mb-3">
+                    <h5> Junior IT Officer</h5>
+                    <p>Job Period: 2018-2019</p>
+                  </div>
+                  <div>
+                    <h5>Maintenance Assitant (IT)</h5>
+                    <p>Job Period: 2019-Present</p>
+                  </div>
                 </div>
               </div>
               <div className={update === 4 ? "show-content " : "content"}>
-                <h2 className="mb-3 tab-title">Training</h2>
-                <div>
-                  <h5>1. Basic MicroTik Course (MTCNA)</h5>
-                  <p>Traning Period: 2020(June-Augest)</p>
-                </div>
-                <div>
-                  <h5>2. Programming Hero</h5>
-                  <p>Traning Period:2022-Present</p>
+                <h2 className="mb-3 tab-title text-center">Training</h2>
+                <div className="text-center">
+                  <div className="mb-3">
+                    <h5> Basic MicroTik Course (MTCNA)</h5>
+                    <p>Traning Period: 2020(June-Augest)</p>
+                  </div>
+                  <div>
+                    <h5>Programming Hero</h5>
+                    <p>Traning Period:2022-Present</p>
+                  </div>
                 </div>
               </div>
             </div>

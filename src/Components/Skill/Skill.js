@@ -112,7 +112,7 @@ const Skill = () => {
     progressbarmongo,
   ]);
   return (
-    <div>
+    <div id="skill">
       <div className="title">
         <h1 className="text-center text-uppercase text-white">Skills</h1>
         <span className="text-center d-block text-white">

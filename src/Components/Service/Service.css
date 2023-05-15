@@ -1,0 +1,27 @@
+.service_icon img {
+  width: 20%;
+}
+
+.sevice-section-part {
+  background-color: white;
+  padding: 30px;
+  width: 350px;
+  height: 350px;
+}
+
+.sevice-section-part:hover {
+  transition: 0.5s all;
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .sevice-section-part {
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+  }
+}

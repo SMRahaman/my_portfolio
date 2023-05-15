@@ -5,21 +5,21 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
 const Home = () => {
   return (
-    <Container className="my-5">
+    <Container className="my-5" id="home">
       <Row className="align-items-center home_container">
-        <Col lg={6} sm={12}>
+        <Col lg={5} sm={12}>
           <div className="home_info">
-            <h1 className="mb-3 text-white">
+            <h1 className=" text-white">
               Hi I'm <b>SYED MARUF</b>
             </h1>
             <TypeAnimation
               sequence={[
                 "Frontend Developer",
                 500,
-                "Marn Stack Developer",
+                "MERN Stack Developer",
                 500,
               ]}
-              style={{ fontSize: "25px", color: "white" }}
+              style={{ fontSize: "25px", color: "white", fontWeight: "bold" }}
               repeat={Infinity}
             />
 
@@ -32,7 +32,7 @@ const Home = () => {
             </Button>
           </div>
         </Col>
-        <Col lg={6} sm={12} className="d-flex justify-content-center">
+        <Col lg={7} sm={12} className="d-flex justify-content-center">
           <img src={about_photo} alt="" className="home_img" />
         </Col>
       </Row>
